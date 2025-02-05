@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Mees - CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Thomas Mees</h1>
-        <h2>Stage en Cyber-Sécurité</h2>
+        <div class="container">
+            <h1>Thomas Mees</h1>
+            <p>Stage en Cyber-Sécurité | Enseignant en Mathématiques</p>
+        </div>
     </header>
     <nav>
-        <ul>
+        <ul class="nav-links">
             <li><a href="#informations">Informations</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#experiences">Expériences</a></li>
@@ -22,31 +26,39 @@
     </nav>
     <main>
         <section id="informations">
-            <h3>Informations</h3>
-            <ul>
-                <li><strong>Date de naissance :</strong> 28/10/1996</li>
-                <li><strong>Adresse :</strong> Affnay 8a - 4608 Dalhem</li>
-                <li><strong>Email :</strong> <a href="mailto:thomas.mees@proton.me">thomas.mees@proton.me</a></li>
-                <li><strong>Permis :</strong> Permis B - Véhicule personnel</li>
-            </ul>
+            <h2>Informations</h2>
+            <div class="info-box">
+                <p><i class="fas fa-birthday-cake"></i> Né le 28/10/1996</p>
+                <p><i class="fas fa-map-marker-alt"></i> Affnay 8a - 4608 Dalhem</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:thomas.mees@proton.me">thomas.mees@proton.me</a></p>
+                <p><i class="fas fa-car"></i> Permis B - Véhicule personnel</p>
+            </div>
         </section>
         <section id="skills">
-            <h3>Compétences</h3>
-            <h4>Hard Skills</h4>
-            <ul>
-                <li>Création de cours : Conception pédagogique, Design numérique</li>
-                <li>Logiciels bureautiques : Word, Excel</li>
-                <li>Programmation : Python, Javascript</li>
-            </ul>
-            <h4>Soft Skills</h4>
-            <ul>
-                <li>Dynamisme et esprit d’initiative</li>
-                <li>Agilité (rigueur et adaptabilité)</li>
-                <li>Leadership et coordination d’équipe</li>
-            </ul>
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>Création de cours (conception pédagogique, design numérique)</li>
+                        <li>Programmation : Python, Javascript</li>
+                        <li>Logiciels bureautiques : Word, Excel</li>
+                        <li>Outils interactifs éducatifs : Promethean, ClassFlow</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Dynamisme et esprit d’initiative</li>
+                        <li>Leadership et coordination d’équipe</li>
+                        <li>Organisation et planification</li>
+                        <li>Agilité (rigueur et adaptabilité)</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="experiences">
-            <h3>Expériences Professionnelles</h3>
+            <h2>Expériences Professionnelles</h2>
             <ul>
                 <li><strong>2021 – 2022 :</strong> Enseignant de mathématiques et technologie, AR Visé</li>
                 <li><strong>2021 :</strong> Président de la jeunesse, Aubin-Neufchâteau</li>
@@ -55,19 +67,19 @@
             </ul>
         </section>
         <section id="formations">
-            <h3>Études et Formations</h3>
+            <h2>Études et Formations</h2>
             <ul>
-                <li><strong>2023 – en cours :</strong> Formation en cybersécurité</li>
-                <li><strong>2016 – 2019 :</strong> AESI Régendat en mathématiques, Haute École Charlemagne</li>
+                <li><strong>2023 – en cours :</strong> Formation en cybersécurité (90 crédits/180)</li>
+                <li><strong>2016 – 2019 :</strong> AESI Régendat en mathématiques</li>
                 <li><strong>2009 – 2016 :</strong> CESS Option scientifique, AR Visé</li>
             </ul>
         </section>
         <section id="hobbies">
-            <h3>Hobbies</h3>
+            <h2>Hobbies</h2>
             <ul>
-                <li>Football</li>
-                <li>DJ / Compositeur</li>
-                <li>Informatique et nouvelles technologies</li>
+                <li><i class="fas fa-futbol"></i> Football</li>
+                <li><i class="fas fa-music"></i> DJ / Compositeur</li>
+                <li><i class="fas fa-laptop-code"></i> Informatique et nouvelles technologies</li>
             </ul>
         </section>
     </main>
@@ -76,3 +88,4 @@
     </footer>
 </body>
 </html>
+
