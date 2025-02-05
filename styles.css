@@ -15,13 +15,15 @@ header {
 }
 
 header .profile-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Rond */
-    border: 4px solid white;
-    margin-bottom: 1em;
-    object-fit: cover; /* Ajuste l'image dans le cadre rond */
+    width: 120px; /* Largeur de la photo */
+    height: 120px; /* Hauteur de la photo */
+    border-radius: 50%; /* Forme ronde */
+    border: 4px solid white; /* Contour blanc */
+    margin-bottom: 1em; /* Espacement avec le texte */
+    object-fit: cover; /* Ajuste l'image dans le cadre */
+    object-position: top; /* Recentre l'image vers le haut */
 }
+
 
 header h1 {
     font-size: 2.5em;
