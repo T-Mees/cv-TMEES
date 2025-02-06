@@ -123,6 +123,7 @@ h2 {
     display: none;
 }
 
+
 form {
     display: flex;
     flex-direction: column;
@@ -130,8 +131,8 @@ form {
 }
 
 form input, form textarea, form button {
-    padding: 0.8em;
     font-size: 1em;
+    padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -140,11 +141,7 @@ form button {
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 0.8em;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
