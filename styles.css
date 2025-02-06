@@ -20,6 +20,7 @@ header .profile-photo {
     height: 150px;
     border-radius: 50%;
     border: 4px solid white;
+    margin-bottom: 1em;
     object-fit: cover;
     object-position: center;
 }
@@ -34,11 +35,12 @@ header .download-btn {
     background-color: #3498db;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 header .download-btn:hover {
     background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 /* Navigation */
@@ -80,9 +82,72 @@ h2 {
     margin-bottom: 1em;
 }
 
-.skills-grid ul, #experiences ul, #formations ul {
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.skills-grid ul, #experiences ul, #formations ul, .project-category ul {
     list-style-type: disc;
     margin-left: 1.5em;
+}
+
+#experiences ul li, #formations ul li, .project-category ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Projets */
+.project-category {
+    margin-bottom: 2em;
+}
+
+.project-category h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-category ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.project-category ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Contact */
+#contact-content.hidden {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form input, form textarea, form button {
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
 }
 
 /* Footer */
@@ -91,4 +156,33 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
