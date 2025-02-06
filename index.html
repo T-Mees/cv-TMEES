@@ -66,29 +66,25 @@
             <h2>Expériences Professionnelles</h2>
             <ul>
                 <li><strong>2021 – 2022 :</strong> Titulaire d'une classe, remédiations et excursions pédagogiques, AR Visé</li>
-                <li><strong>2021 :</strong> Président de la jeunesse - Organisation d'événements culturels et ludiques</li>
-                <li><strong>2019 – 2021 :</strong> Éducateur, gestion d'ateliers numériques et scolaires, AMO Reliance</li>
+                <li><strong>2021 :</strong> Président de la jeunesse à Aubin-Neufchâteau - Organisation d'événements culturels et ludiques</li>
+                <li><strong>2019 – 2021 :</strong> Éducateur à AMO Reliance à Visé - Gestion d'ateliers numériques et scolaires</li>
             </ul>
         </section>
         <section id="formations">
             <h2>Études et Formations</h2>
             <ul>
                 <li>
-                    <strong>2023 – en cours :</strong> Formation en Cybersécurité 
+                    <strong>2023 – en cours :</strong> Formation en Cybersécurité à HELMo Sainte-Marie
                     <ul>
-                        <li><strong>Analyse de risques :</strong> Matrices de risques, évaluation des menaces et propositions de solutions adaptées.</li>
-                        <li><strong>Architecture des ordinateurs :</strong> Étude approfondie du hardware.</li>
-                        <li><strong>Techniques web :</strong> Développement en JavaScript et PHP.</li>
-                        <li><strong>Bases de données :</strong> SQL et NoSQL (MongoDB).</li>
-                        <li><strong>Programmation :</strong> Scripts avancés en Python.</li>
-                        <li><strong>Réseaux :</strong> Étude des protocoles réseau, couches OSI et TCP/IP.</li>
+                        <li>Analyse de risques, techniques web, bases de données</li>
+                        <li>Programmation Python, réseaux, et systèmes d'exploitation</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>2016 – 2019 :</strong> AESI Régendat en Mathématiques 
+                    <strong>2016 – 2019 :</strong> AESI Régendat en Mathématiques à HECH Les Rivageois
                 </li>
                 <li>
-                    <strong>2009 – 2016 :</strong> CESS Option Scientifique 
+                    <strong>2009 – 2016 :</strong> CESS Option Scientifique à Athénée Royal de Visé
                 </li>
             </ul>
         </section>
@@ -112,19 +108,28 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit" class="submit-btn">Envoyer</button>
-            </form>
+            <div id="contact-content" class="hidden">
+                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <p>© 2025 Thomas Mees - Tous droits réservés.</p>
     </footer>
+    <script>
+        document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const contactContent = document.getElementById('contact-content');
+            contactContent.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
