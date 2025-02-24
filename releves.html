@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relevés de Notes - Thomas Mees</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -26,17 +27,23 @@
         <section id="premiere-annee">
             <h2>📖 Première Année</h2>
             <div class="notes-gallery">
-                <img src="Bloc1.png" alt="Relevé de Notes 1ère Année">
+                <img src="Bloc1.png" alt="Relevé de Notes 1ère Année" onclick="openLightbox(this)">
             </div>
         </section>
 
         <section id="deuxieme-annee">
             <h2>📘 Deuxième Année</h2>
             <div class="notes-gallery">
-                <img src="Bloc2.png" alt="Relevé de Notes 2ème Année">
+                <img src="Bloc2.png" alt="Relevé de Notes 2ème Année" onclick="openLightbox(this)">
             </div>
         </section>
     </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
 
     <footer>
         <p>© 2025 Thomas Mees - Tous droits réservés.</p>
